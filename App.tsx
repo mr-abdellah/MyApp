@@ -22,7 +22,13 @@ export default function App() {
     <NavigationContainer linking={linking}>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="PaymentSuccess" component={PaymentSuccessScreen} />
+        <Stack.Screen
+          name="PaymentSuccess"
+          component={PaymentSuccessScreen}
+          options={{
+            title: 'Payment Result',
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

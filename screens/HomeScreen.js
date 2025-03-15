@@ -11,7 +11,6 @@ export default function HomeScreen({navigation}) {
       setLoading(true);
       const paymentUrl = await initiatePayment(2500);
       console.log('Payment URL:', paymentUrl);
-      navigation.navigate('PaymentSuccess'); // Navigate after payment success
     } catch (error) {
       console.error('Payment failed:', error);
     } finally {
